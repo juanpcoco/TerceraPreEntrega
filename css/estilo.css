@@ -1,0 +1,278 @@
+.title {
+  color: #D7DE11;
+  margin-bottom: 40px;
+  font-size: 58px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  border: 2px solid #9c27b0;
+  background: #9c27b0;
+  margin-top: 15px;
+  padding: 10px 40px;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn:hover {
+  color: #D7DE11;
+  background-color: #fff;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+  background: #171717;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh !important;
+  background: url(../img/header.jpg) no-repeat center;
+  background-size: cover;
+}
+.header p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sau {
+  padding: 55px;
+  background: #1f1d1d;
+}
+.sau p {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 17px;
+  padding: 0 50px;
+}
+.sau footer {
+  font-size: 20px;
+  color: #9c27b0;
+  text-align: center;
+}
+.sau .nombre {
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.box-container .box {
+  height: 11rem;
+  width: 17rem;
+  background: #101010;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
+  margin: 2rem;
+}
+.box-container .box h3 {
+  color: #9c27b0;
+  font-size: 20px;
+}
+
+.box i {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #9c27b0;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.navbar {
+  display: flex;
+  margin-right: 10px;
+}
+.navbar a {
+  display: flex;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.navbar a:hover {
+  background: #3f3f3f;
+  color: aquamarine;
+}
+
+.about {
+  background: #171717;
+}
+.about p {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 17px;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.price {
+  background: url(../img/costos.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.price p {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 17px;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.contact {
+  padding-top: 10px;
+  background: #171717;
+  padding-bottom: 0;
+}
+.contact footer {
+  font-size: 20px;
+  color: #9c27b0;
+  text-align: center;
+}
+
+.logo {
+  margin-left: 40px;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.header-nosotros {
+  height: 100vh !important;
+  background: url(../img/amg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.header-contact {
+  height: 100vh !important;
+  background: url(../img/f150.webp) no-repeat center;
+  background-size: cover;
+}
+
+.header-lanzamiento {
+  height: 100vh !important;
+  background: url(../img/porsche.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.header-contacto {
+  height: 100vh !important;
+  background: url(../img/mustang2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.p-contact {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(254, 254, 254);
+  padding: 0 100px;
+  text-align: center;
+}
+
+.nav-toggle {
+  color: #040509;
+  background: rgb(254, 254, 254);
+  border: none;
+  font-size: 25px;
+  padding: 1px 12px;
+  line-height: 40px;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .title {
+    margin-top: 80px;
+    font-size: 30px;
+  }
+  .head {
+    flex-direction: column;
+  }
+  .sau {
+    height: 160vh;
+  }
+  .navbar {
+    padding: 10px 0px;
+    align-items: center;
+    background: #9c27b0;
+    position: fixed;
+    left: 0;
+    top: 63px;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    transition: left 0.3s;
+    left: 100%;
+    flex-direction: column;
+  }
+  .p-contact {
+    height: 60vh;
+    padding: 23px;
+  }
+  .nav-toggle {
+    display: inline-block;
+    font-size: 30px;
+    position: static;
+  }
+  .nav-menu_visible {
+    left: 0px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media (max-width: 700px) {
+  .nav-toggle {
+    color: #040509;
+    background: rgb(254, 254, 254);
+    border: none;
+    font-size: 25px;
+    padding: 1px 12px;
+    line-height: 40px;
+  }
+  .nav-menu_visible {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
